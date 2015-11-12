@@ -1,0 +1,173 @@
+#header {
+	width :1000px;
+	height:110px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid black;
+}
+#centreur {
+	width:1000px;
+	margin:auto;
+}
+#header img{
+	float:left;
+}
+#header h2{
+	float:left;
+	font-size: 2em;
+	font-family: Helvetica;
+	margin-left: 15px;
+}
+#section h2 {
+	margin-left: 50px;
+}
+#filters {
+	width:900px;
+	margin :auto;
+	height:60px;
+	padding:30px 0 0 0;
+	border:1px solid black;
+}
+#filters label, #filters input , #filters select{
+	float:left;
+}
+.specialtitle {
+	font-family:Helvetica;
+	font-size:0.65em;
+	margin-left: 20px;
+}
+.figureconcert {
+	float:left;
+	width:300px;
+	min-height:250px;
+	margin: 20px 0 0 25px;
+	border:1px solid black;
+}
+.filtres {
+	margin-left: 40px;
+}
+#infosection h2 {
+	font-family: Helvetica;
+	margin-left: 50px;
+	font-size: 1.2em;
+}
+#infosection h3{
+	font-size:0.65em;
+	margin-left: 20px;
+	font-family:Helvetica;
+}
+h3 {
+	font-size: 2em;
+	font-family: Helvetica;
+}
+.affichebutton {
+	margin:4px 30px 0 90px;
+}
+.concertimage {
+	width:250px;
+	height:150px;
+	margin-left: 20px;
+}
+.infoconcert p {
+	font-size: 0.65em;
+	font-family: Helvetica;
+	float:left;
+	margin-left: 20px;
+}
+#formadmin label , #formadmin input{
+	margin-left: 30px;
+	float:left;
+}
+iframe {
+	margin-left: 50px;
+	margin-bottom: 40px;
+	float:left;
+}
+tr, td{
+	border: 1px solid black;
+}
+#table {
+	width :600px;
+	margin:auto;
+}
+#precommande {
+	border :1px solid #ababab;
+	background-color: grey;
+	font-size: 1.5em;
+	margin : 15px 0 15px 10px;
+}
+#receivevideo {
+	display:none;
+}
+#infonav {
+	padding:5px 8px  0 8px;
+	width:280px;
+	position:absolute;
+	font-family: Helvetica;
+	margin-left: 720px;
+	margin-top: 60px;
+	border:01px solid black;
+}
+#info div {
+	width:250px;
+	font-family: Helvetica;
+	margin-top: 20px;
+}
+ #map-canvas {
+ 	width:250px; 
+ 	height: 200px;  
+ 	padding: 0;
+ 	margin:auto;
+ }
+.value {
+	margin-top: 3px;
+	font-family: Helvetica;
+	font-size: 0.80em;
+}
+.label {
+	text-decoration: underline;
+	font-size: 0.85em;
+}
+#infonav p{
+	font-size :0.7em;
+}
+#infosection {
+	width:700px;
+	float:left;
+}
+.infoconcert p:first-child{
+	width:250px;
+}
+.right {
+	float:right;
+}
+#pagination {
+	width:500px;
+	margin:auto;
+}
+.infophoto {
+	width :650px;
+	margin-left: 50px
+}
+#infosection p{
+	font-family:Helvetica;
+	width:650px;
+	margin-left: 50px;
+	float:left;
+}
+#pagination {
+	float:left;
+	margin : 15px 0 50px 300px;
+}
+#pagination li {
+	float:left;
+	list-style: none;
+	margin-left: 5px;
+}
+.lienspagination {
+	font-size: 1.2em;
+	margin-left: 10px;
+	color:grey;
+}
+.lienspagination:hover {
+	cursor:pointer;
+}
