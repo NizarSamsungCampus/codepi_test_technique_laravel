@@ -10,7 +10,7 @@ foreach ($trierTags as $info) {
     $tags[$info->tags] = $info->tags;
 }
 
-$prix = ['<20' => 'Moins de 20€', '20-30' => 'Entre 20€ et 30€', '>30' => 'Moins de 50€'];
+$prix = ['<20' => 'Moins de 20€', '20-30' => 'Entre 20€ et 30€', '<50' => 'Moins de 50€'];
 
 if (isset($concerts)) {
     $filterville = null;

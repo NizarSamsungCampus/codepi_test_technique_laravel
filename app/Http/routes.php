@@ -37,6 +37,4 @@ Route::get('add', 'AdminController@addInterface');
 
 Route::post('addProcess', 'AdminController@add');
 
-Route::post('search', 'ConcertsController@search');
-
 Route::get('search', 'ConcertsController@search');

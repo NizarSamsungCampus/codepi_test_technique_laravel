@@ -7,6 +7,7 @@ use Concerto\Concert;
 use Concerto\Http\Requests;
 use Concerto\Http\Controllers\Controller;
 use DB, Session;
+use Response;
 use Illuminate\Support\Facades\Validator;
 use Input, Hash, Auth;
 use Illuminate\Support\Facades\Redirect;
@@ -35,10 +36,14 @@ class ConcertsController extends Controller
      *
      * @return Return a view with results of user's search.
      */
-    public function search() {
-        $ville = Input::get('filterville');
-        $tags = Input::get('filtertags');
-        $prix = Input::get('filterprix');
+    public function test() {
+        return Response::json("akhi");
+    }
+
+    public function search(Request $request) {
+        $ville = $request->input('ville');
+        $tags = $request->input('tags');
+        $prix = $request->input('prix');
         $akhi = new Concert;
         $result = $akhi->newQuery()->leftJoin('artistes', 'concerts.artiste', '=', 'artistes.nom');
         if (!empty($ville)) 
@@ -59,9 +64,7 @@ class ConcertsController extends Controller
         }
         $data = $result->paginate(9);
         Session::put('search', $data);
-        if (Session::get('search'))
-            $data = Session::get('search');
 
-        return view('home.results')->with('concerts', $data);
+        return Response::json($data);
     }
 }

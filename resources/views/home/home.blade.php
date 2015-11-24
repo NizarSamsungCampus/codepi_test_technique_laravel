@@ -25,8 +25,8 @@
         <section id="section">
             <h2>Parcourir les concerts à venir</h2>
             <div id="filters">
-                {!! Form::open(array('url' => 'search')) !!}
-                {!! Form::submit('Filtrer les recherches', array('class' => 'filtres')) !!}
+                {!! Form::open(array('url' => 'search', 'id' => 'rechercher')) !!}
+                {!! Form::submit('Filtrer les recherches', array('class' => 'filtres', 'id' => 'filtrer')) !!}
                 <?php require_once 'php/filters.php'; ?><!-- This file is in public/php folder !! -->
                 {!! Form::select("filterville", $villes, null, array('placeholder' => "VILLE", 'class' => 'filtres')) !!}
                 {!! Form::select("filtertags", $tags, null, array('placeholder' => "TAGS",'class' => 'filtres')) !!}
@@ -57,8 +57,8 @@
         </section>
         <div id="pagination">
             <?php echo $concerts->render(); ?>
-            ?>
         </div>
     </div>
+    <script type="text/javascript" src="js/filters.js"></script>
 </body>
 </html>
